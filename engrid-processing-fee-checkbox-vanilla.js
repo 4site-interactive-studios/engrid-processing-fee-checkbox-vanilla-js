@@ -88,10 +88,16 @@
         window.dispatchEvent(event);
       }
   
+      /*
       var form = document.querySelector("form.en__component");
       form.addEventListener("submit", function(e) {
         updateDonationAmount();
       });
+      */
+
+      window.enOnSubmit = function(){
+        return false; // return false to prevent submit
+      }
   
       function initializeBaseDonationAmounts() {
         var donation_amount_buttons = document.querySelectorAll(
