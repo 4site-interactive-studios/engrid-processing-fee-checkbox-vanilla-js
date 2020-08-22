@@ -110,17 +110,7 @@
         }
       }
       initializeBaseDonationAmounts();
-  
-      // payment type (VI, MC, AM, DI, etc) change handler
-      var payment_type_select = document.querySelector(
-        'select[name="' + payment_card_type_name + '"]'
-      );
-      if (payment_type_select) {
-        payment_type_select.addEventListener("change", function() {
-          updateDonationAmount();
-        });
-      }
-  
+      
       // payment method (card, paypal, check, etc) click handler
       var payment_button_wrapper = document.getElementsByClassName(
         payment_method_wrapper_class_name
