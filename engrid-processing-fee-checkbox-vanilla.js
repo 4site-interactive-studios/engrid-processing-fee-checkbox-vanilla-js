@@ -1,6 +1,20 @@
 <!-- Custom Checkbox using the same markup as Engaging Networks -->
-
-<div class="en__field en__field--checkbox en__field--000000 en__field--processing_fees pseudo-en-field">
+<style>
+    .en__field--processing_fees {
+        padding: 0px 15px 0px 15px;
+    }
+    .en__field--processing_fees .en__field__item {
+        width: 100%;
+    }
+    .en__field--processing_fees .en__field__element--checkbox > .en__field__item > .en__field__label--item::before {
+        /*
+        position: absolute;
+        margin: 0;
+        top: 9px;
+        */
+    }
+</style>
+<div class="en__field en__field--checkbox en__field--000000 en__field--processing_fees pseudo-en-field ">
     <div class="en__field__element en__field__element--checkbox">
         <div class="en__field__item">
             <input class="en__field__input en__field__input--checkbox" data-processing-fee-fixed-amount-added="0" data-processing-fee-percent-added="3.0" id="en__field_supporter_processing_fees" name="supporter.processing_fees" type="checkbox" value="N" />
