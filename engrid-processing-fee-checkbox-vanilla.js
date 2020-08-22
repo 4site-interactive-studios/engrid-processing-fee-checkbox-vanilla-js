@@ -24,7 +24,7 @@
 </div>
 
 <!-- Process Fee Checkbox JS Logic Code -->
-
+<script>
   (function() {
     window.addEventListener("load", function() {
       var donation_amount_name = "transaction.donationAmt";
@@ -165,3 +165,4 @@
       }
     });
   })();
+  </script>
