@@ -17,6 +17,7 @@
       var donation_amount_other_name = "transaction.donationAmt.other";
       var payment_card_type_name = "transaction.paymenttype";
       var processing_fee_name = "supporter.processing_fees";
+      var processing_fee_amount = document.querySelector('#en__field_supporter_processing_fees').getAttribute('data-processing-fee-percent-added');
       var payment_method_wrapper_class_name = "en__field--89032";
       var event;
   
@@ -32,31 +33,7 @@
           var payment_type = window.getPaymentType();
           var donation_amount = window.getDonationAmount();
           if (donation_amount == 0) return 0;
-          var processing_fee = 0;
-  
-          switch (payment_type.toUpperCase()) {
-            case "VI":
-              processing_fee = donation_amount * 0.03;
-              break;
-            case "MC":
-              processing_fee = donation_amount * 0.03;
-              break;
-            case "DI":
-              processing_fee = donation_amount * 0.03;
-              break;
-            case "AX":
-              processing_fee = donation_amount * 0.03;
-              break;
-            case "PAYPAL":
-              processing_fee = donation_amount * 0.03;
-              break;
-            case "CHECK":
-              processing_fee = donation_amount * 0.03;
-              break;
-            default:
-              processing_fee = 0;
-              break;
-          }
+          var processing_fee = donation_amount * 0.03;
   
           return roundDollarAmount(processing_fee);
         } else {
@@ -73,7 +50,7 @@
         var donation_input = window.getDonationInput();
         if (!donation_input) return;
   
-        if (donation_input.name == "donation_amount_other_name") {
+        if (donation_input.name == "transaction.donationAmt.other") {
           var original_value = donation_input.getAttribute("data-original");
           if (!original_value) {
             donation_input.setAttribute("data-original", donation_input.value);
