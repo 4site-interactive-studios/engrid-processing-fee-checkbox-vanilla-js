@@ -36,22 +36,22 @@
   
           switch (payment_type.toUpperCase()) {
             case "VI":
-              processing_fee = donation_amount * 0.025 + 0.1;
+              processing_fee = donation_amount * 0.03;
               break;
             case "MC":
-              processing_fee = donation_amount * 0.025 + 0.1;
+              processing_fee = donation_amount * 0.03;
               break;
             case "DI":
-              processing_fee = donation_amount * 0.025 + 0.1;
+              processing_fee = donation_amount * 0.03;
               break;
             case "AX":
-              processing_fee = donation_amount * 0.025 + 0.1;
+              processing_fee = donation_amount * 0.03;
               break;
             case "PAYPAL":
-              processing_fee = donation_amount * 0.05 + 0.3;
+              processing_fee = donation_amount * 0.03;
               break;
             case "CHECK":
-              processing_fee = donation_amount * 0.025 + 0.1;
+              processing_fee = donation_amount * 0.03;
               break;
             default:
               processing_fee = 0;
