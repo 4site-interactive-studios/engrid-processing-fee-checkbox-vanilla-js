@@ -16,8 +16,8 @@
       var donation_amount_name = "transaction.donationAmt";
       var donation_amount_other_name = "transaction.donationAmt.other";
       var payment_card_type_name = "transaction.paymenttype";
-      var processing_fee_name = "supporter.questions.180213";
-      var payment_method_wrapper_class_name = "en__field--180165";
+      var processing_fee_name = "supporter.processing_fees";
+      var payment_method_wrapper_class_name = "en__field--89032";
       var event;
   
       window.calculateProcessingFee = function() {
